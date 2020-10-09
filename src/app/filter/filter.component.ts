@@ -36,7 +36,7 @@ export class FilterComponent implements OnInit {
     // single
     const singleArray = from(['ahmet', 'mehmet', 'hasan']);
     singleArray.pipe(single((val) => val == 'mehmet')).subscribe((data) => {
-      console.log(data);
+      // console.log(data);
     });
 
     // distinct
@@ -54,7 +54,7 @@ export class FilterComponent implements OnInit {
     // skipUntil
     const mytimer = interval(1000);
     mytimer.pipe(skipUntil(timer(5000))).subscribe(data => {
-      console.log(data)
+      // console.log(data)
     })
 
   }
